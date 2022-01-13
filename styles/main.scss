@@ -1,0 +1,86 @@
+@import "components/fonts.scss";
+@import "components/header.scss";
+@import "components/menu.scss";
+@import "components/hero.scss";
+@import "components/lawyers.scss";
+@import "components/skills.scss";
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+// .main {
+//     background: linear-gradient(20deg, #323264 14.33%, #323264 51.39%, #7a425e 87.53%);
+//     padding: 180px 0 0 0;
+// }
+
+//////////CONTAINER
+.container {
+    margin: 0 auto;
+    max-width: 1320px;
+    width: 100%;
+}
+
+// WRAPPERS////
+.main-wrapper {
+    position: relative;
+
+    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%);
+    border-radius: 0px 0px 12px 12px;
+}
+
+.main-wrapper:after {
+    position: absolute;
+    content: "";
+    width: 97%;
+    height: 10px;
+    right: 50%;
+    bottom: -10px;
+    transform: translate(50%);
+    background-color: #cacadb;
+    border-radius: 0 0 12px 12px;
+}
+
+.main-wrapper::before {
+    position: absolute;
+    content: "";
+    width: 94%;
+    height: 10px;
+    right: 50%;
+    bottom: -20px;
+    transform: translate(50%);
+    background-color: #e7e7f2;
+    border-radius: 0 0 12px 12px;
+}
+
+/////VARIABLES
+:root {
+    --regular: norms-regular, serif;
+}
+:root {
+    --medium: norms-medium, serif;
+}
+
+:root {
+    --bold: norms-bold, serif;
+}

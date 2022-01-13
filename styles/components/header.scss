@@ -1,0 +1,110 @@
+.header {
+    padding: 50px 0 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        min-height: 65px;
+        color: white;
+    }
+
+    &__content {
+        flex-direction: column;
+        justify-content: space-between;
+        display: flex;
+    }
+    &__lang-contacts {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: var(--bold), serif;
+    }
+
+    &__logo {
+        align-self: center;
+    }
+
+    &__lang {
+        letter-spacing: 1px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    &__link {
+        color: white;
+        margin-right: 10px;
+    }
+    &__link:last-child {
+        margin-right: 20px;
+    }
+
+    &__link--active {
+        outline: 5px solid #f0145a;
+        background-color: #f0145a;
+        border-radius: 6px;
+    }
+
+    // &__contacts {
+    // }
+
+    &__facebook {
+        fill: white;
+        margin-left: 10px;
+    }
+
+    &__facebook--hover:hover {
+        fill: #24a3ff;
+        transform: scale(1.05);
+        transition: 0.3s linear;
+    }
+
+    &__address {
+        font-size: 16px;
+        line-height: 19px;
+        font-family: var(--regular), serif;
+        margin-right: 13px;
+
+        word-break: break-all;
+    }
+
+    &__telephone {
+        position: relative;
+        font-size: 16px;
+        line-height: 19px;
+        padding-left: 10px;
+        padding-right: 12px;
+    }
+    &__telephone::before {
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: white;
+        top: 50%;
+        left: 0;
+        transform: translateY(-25%);
+    }
+    &__telephone::after {
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: white;
+        right: 0;
+        bottom: 50%;
+        transform: translateY(75%);
+    }
+
+    &__nav {
+        font-family: var(--medium), serif;
+        font-size: 18px;
+        line-height: 21px;
+    }
+}

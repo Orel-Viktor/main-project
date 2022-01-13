@@ -1,0 +1,112 @@
+.lawyers {
+    padding: 80px 0 60px 0px;
+
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        max-width: 1130px;
+        width: 100%;
+        margin: 0 auto;
+
+        word-wrap: break-word;
+    }
+
+    &__list {
+        position: relative;
+
+        max-width: 485px;
+        width: 100%;
+
+        margin-bottom: 20px;
+    }
+
+    &__items {
+        position: relative;
+        font-size: 42px;
+        line-height: 50px;
+
+        text-align: right;
+
+        width: 100%;
+        color: #b3b3ba;
+
+        margin-bottom: 20px;
+        font-family: var(--bold);
+    }
+
+    //////SERAPATOR///////
+
+    &__list::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -40px;
+        height: 100%;
+        // border-right: 3px solid white;
+        display: block;
+        width: 3px;
+
+        background: white;
+    }
+
+    &__items::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        right: -40px;
+        height: 100%;
+        // border-right: 3px solid red;
+
+        width: 3px;
+        background: linear-gradient(90.13deg, #d55555 0.94%, #cf0000 99.96%);
+        z-index: 1;
+
+        display: none;
+    }
+
+    &__items:hover::after,
+    &__items--active::after {
+        display: block;
+    }
+
+    //////SERAPATOR-END///////
+
+    &__items:last-child {
+        margin-bottom: 0;
+    }
+
+    &__items:hover,
+    &__items--active {
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-image: linear-gradient(90.13deg, #ef8080 0.84%, #f0145a 99.96%);
+
+        cursor: pointer;
+    }
+
+    &__descriptions {
+        max-width: 585px;
+        width: 100%;
+        color: white;
+
+        font-family: var(--regular);
+    }
+
+    &__title {
+        font-size: 28px;
+        line-height: 38px;
+
+        margin-bottom: 20px;
+    }
+
+    &__subtitle {
+        font-size: 19px;
+        line-height: 30px;
+
+        opacity: 0.8;
+    }
+}

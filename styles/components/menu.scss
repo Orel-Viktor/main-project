@@ -1,0 +1,23 @@
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+
+    &__list-item {
+        display: inline-block;
+        margin-right: 12px;
+    }
+
+    &__list-item:last-child {
+        margin: 0;
+    }
+
+    &__link--hover:hover {
+        transform: scale(1.1);
+    }
+
+    &__link {
+        color: white;
+        transition: 0.3s;
+    }
+}
