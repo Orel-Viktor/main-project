@@ -1,0 +1,68 @@
+.hero {
+    background: linear-gradient(20deg, #323264 14.33%, #323264 51.39%, #7a425e 87.53%);
+    padding: 180px 0 20px 0;
+
+    &__inner {
+        margin: 0 auto;
+        max-width: 690px;
+        width: 100%;
+        min-height: 620px;
+
+        background: url(../../images/hero/hero-staple.png) no-repeat;
+
+        @media screen and (max-width: 375px){
+            background:none;
+        }
+
+        
+    }
+
+    &__inner-p {
+        position: relative;
+
+        padding: 180px 0 0 0;
+        max-width: inherit;
+        min-height: inherit;
+        width: 100%;
+
+        background: linear-gradient(180deg, rgba(50, 50, 100, 0) 16.67%, #323264 100%) bottom right no-repeat,
+            url(../../images/hero/hero-p.svg) 60% 98% no-repeat;
+        background-size: 100% 200px, auto;
+
+        @media screen and (max-width: 375px) {
+            background: linear-gradient(180deg, rgba(50, 50, 100, 0) 16.67%, #323264 100%) bottom right no-repeat,
+             url(../../images/hero/hero-p.svg) 33% 64% no-repeat;
+            background-size: 100% 200px, 437px;
+           
+           
+        }
+    }
+
+    &__text {
+        word-wrap: break-word;
+        margin: 0 auto;
+        text-align: center;
+        max-width: 500px;
+        width: 100%;
+        font-family: var(--regular), serif;
+        color: white;
+        font-size: 38px;
+        line-height: 45px;
+    }
+}
+
+.scroll-down {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+
+    @media screen and (max-width: 375px) {
+        bottom: 13%;
+    }
+        
+    &__img {
+        width: 42px;
+        height: 42px;
+    }
+}
