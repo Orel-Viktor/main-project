@@ -59,7 +59,6 @@
     &__link {
         color: #b3b3ba;
     }
-    
 
     &__link::after {
         position: absolute;
@@ -93,8 +92,6 @@
         -webkit-background-clip: text;
         background-clip: text;
         background-image: linear-gradient(90.13deg, #ef8080 0.84%, #f0145a 99.96%);
-
-        
     }
 
     &__descriptions {
@@ -125,7 +122,6 @@
     margin-bottom: 80px;
     @media screen and (max-width: 1180px) {
         display: block;
-        
     }
 
     &__description {
@@ -143,21 +139,32 @@
 
         margin-bottom: 20px;
         font-family: var(--bold);
+
+        @media screen and (max-width: 642px) {
+            font-size: 14px;
+            line-height: 16px;
+        }
     }
-    &__link{
+    &__link {
         color: #b3b3ba;
     }
-    &__link:active{
+    &__link:active {
         color: transparent;
         -webkit-background-clip: text;
         background-clip: text;
-        background-image: linear-gradient(90.13deg, #ef8080 0.84%, #f0145a 99.96%);}
+        background-image: linear-gradient(90.13deg, #ef8080 0.84%, #f0145a 99.96%);
+    }
 
     &__title {
         font-size: 28px;
         line-height: 38px;
 
         margin-bottom: 15px;
+
+        @media screen and (max-width: 642px) {
+            font-size: 22px;
+            line-height: 26px;
+        }
     }
 
     &__subtitle {
@@ -165,5 +172,10 @@
         line-height: 30px;
 
         opacity: 0.8;
+
+        @media screen and (max-width: 642px) {
+            font-size: 18px;
+            line-height: 26px;
+        }
     }
 }

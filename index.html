@@ -14,7 +14,7 @@
 
   <!-- //////////SPRITES//////// -->
   <svg style="display: none;">
-    <symbol id="humberger" viewBox="0 0 32 32" >
+    <symbol id="humberger" viewBox="0 0 32 32">
       <g>
         <path d="M7 10H25" stroke="white" stroke-width="2" />
         <path d="M7 16H25" stroke="white" stroke-width="2" />
@@ -31,11 +31,12 @@
           <div class="header__logo">
             <img class="header__logo-img" src="images/header/logo.svg" alt="логотип">
           </div>
-          <svg class="humberger-bar">
-           <use xlink:href="#humberger"></use>
-          </svg>
-
-
+          <label class="humberger">
+            <svg class="humberger__bar">
+              <use xlink:href="#humberger"></use>
+            </svg>
+            <input class="humberger__box" type="checkbox">
+          </label>
         </div>
         <div class="header__content">
           <div class="header__lang-contacts">
@@ -103,7 +104,7 @@
               <li class="lawyers__items"><a class="lawyers__link" href="#">Клієнтоорієнтовані</a></li>
               <li class="lawyers__items"><a class="lawyers__link" href="#">Інноваційні</a></li>
               <li class="lawyers__items"><a class="lawyers__link" href="#">Бізнес-орієнтовані юристи</a>
-                </li>
+              </li>
             </ul>
 
             <div class="lawyers__descriptions">
@@ -124,19 +125,19 @@
       <div class="container">
         <div class="lawyers-adaptive">
           <div class="lawyers-adaptive__description">
-              <p class="lawyers-adaptive__items"><a class="lawyers-adaptive__link" href="#">Послідовні</a></p>
-              <h2 class=" lawyers-adaptive__title">Перевертаємо уявлення про юридичні послуги</h2>
-              <p class="lawyers-adaptive__subtitle">
-                  Консолідуючи багаторічний досвід і практику, юристи компанії супроводжують складні
-                  проекти і
-                  досягають прийняття ряду важливих для галузі рішень. Багато з них формують практику
-                  застосування
-                  морського права в Україні.
-              </p>
+            <p class="lawyers-adaptive__items"><a class="lawyers-adaptive__link" href="#">Послідовні</a></p>
+            <h2 class=" lawyers-adaptive__title">Перевертаємо уявлення про юридичні послуги</h2>
+            <p class="lawyers-adaptive__subtitle">
+              Консолідуючи багаторічний досвід і практику, юристи компанії супроводжують складні
+              проекти і
+              досягають прийняття ряду важливих для галузі рішень. Багато з них формують практику
+              застосування
+              морського права в Україні.
+            </p>
           </div>
+        </div>
+
       </div>
-       
-    </div>
 
       <!-- ////////////SKILLS///////// -->
 
@@ -165,7 +166,7 @@
               <img class="skills__icon" src="images/skills/skills-icon-3.png" alt="">
               <div class="skills__subtitle">Структуризація корпоративних відносин </div>
               <div class="skills__descriptions">Замість просто надавати юридичні послуги, ми закріпимо юриста або цілу
-                команду, які впишуться в повсякденне життя вашої компанії lorem*50. </div>
+                команду, які впишуться в повсякденне життя вашої компанії. </div>
             </div>
             <div class="skills__item">
               <img class="skills__icon" src="images/skills/skills-icon-4.png" alt="">

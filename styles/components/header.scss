@@ -11,10 +11,10 @@
         flex-wrap: wrap;
         min-height: 65px;
         color: white;
-       
+
         @media screen and (max-width: 642px) {
             flex-direction: column-reverse;
-         }
+        }
     }
 
     &__content {
@@ -30,29 +30,24 @@
 
         @media screen and (max-width: 642px) {
             margin-bottom: 10px;
-         }
+        }
     }
 
     &__logo {
         align-self: center;
-
-      
     }
 
-    &__logo-img{
+    &__logo-img {
         @media screen and (max-width: 375px) {
-           width: 50%;
-         }
+            width: 50%;
+        }
     }
 
-    &__humberger{
-
+    &__humberger {
         @media screen and (max-width: 642px) {
             display: flex;
             justify-content: space-between;
-            
-         }
-        
+        }
     }
 
     &__lang {
@@ -67,6 +62,10 @@
     }
     &__link:last-child {
         margin-right: 20px;
+
+        @media screen and (max-width: 312px) {
+            margin-right: 0;
+        }
     }
 
     &__link--active {
@@ -84,7 +83,7 @@
 
         @media screen and (max-width: 375px) {
             display: none;
-          }
+        }
     }
 
     &__facebook--hover:hover {
@@ -103,8 +102,7 @@
 
         @media screen and (max-width: 770px) {
             display: none;
-         }
-        
+        }
     }
 
     &__telephone {
@@ -115,10 +113,8 @@
         padding-right: 12px;
 
         @media screen and (max-width: 375px) {
-           color: rgba(179, 179, 186, 1);
-          }
-        
-
+            color: rgba(179, 179, 186, 1);
+        }
     }
     &__telephone::before {
         content: "";
@@ -133,7 +129,7 @@
 
         @media screen and (max-width: 375px) {
             display: none;
-          }
+        }
     }
     &__telephone::after {
         content: "";
@@ -148,7 +144,7 @@
 
         @media screen and (max-width: 375px) {
             display: none;
-          }
+        }
     }
 
     &__nav {
@@ -158,16 +154,34 @@
     }
 }
 
-.humberger-bar{
+.humberger {
+    position: relative;
     display: none;
-    width: 15%;
+
     @media screen and (max-width: 642px) {
         display: block;
-        width: 64px;
-        height: 64px;
-     }
-     @media screen and (max-width: 375px) {
-        width: 32px;
-        height: 32px;
-      }
+    }
+
+    &__bar {
+        display: none;
+        width: 15%;
+        @media screen and (max-width: 642px) {
+            display: block;
+            width: 64px;
+            height: 64px;
+        }
+        @media screen and (max-width: 375px) {
+            width: 32px;
+            height: 32px;
+        }
+    }
+    &__box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+    }
 }
