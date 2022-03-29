@@ -35,6 +35,16 @@
 
     &__logo {
         align-self: center;
+        @media screen and (max-width: 642px) {
+            display: none;
+        }
+    }
+    &__logo-mob {
+        display: none;
+        align-self: center;
+        @media screen and (max-width: 642px) {
+            display: block;
+        }
     }
 
     &__logo-img {
@@ -43,12 +53,7 @@
         }
     }
 
-    &__humberger {
-        @media screen and (max-width: 642px) {
-            display: flex;
-            justify-content: space-between;
-        }
-    }
+  
 
     &__lang {
         letter-spacing: 1px;
@@ -114,6 +119,7 @@
 
         @media screen and (max-width: 375px) {
             color: rgba(179, 179, 186, 1);
+            font-size: 14px;
         }
     }
     &__telephone::before {
@@ -151,6 +157,11 @@
         font-family: var(--medium), serif;
         font-size: 18px;
         line-height: 21px;
+
+        @media screen and (max-width: 642px) {
+            display: flex;
+            justify-content: space-between;
+        }
     }
 }
 
@@ -183,5 +194,8 @@
         height: 1px;
         overflow: hidden;
         clip: rect(0 0 0 0);
+    }
+    &__box:focus ~ &__bar{
+         border: 2px solid rgb(214, 211, 41);
     }
 }
