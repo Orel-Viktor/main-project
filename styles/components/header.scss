@@ -195,9 +195,7 @@
         overflow: hidden;
         clip: rect(0 0 0 0);
     }
-    &__box:focus ~ &__bar{
-         border: 2px solid rgb(214, 211, 41);
-    }
+    
     
 }
 
