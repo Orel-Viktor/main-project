@@ -5,6 +5,8 @@
     left: 0;
     width: 100%;
 
+    
+
     &__inner {
         display: flex;
         justify-content: space-between;
@@ -59,11 +61,19 @@
         letter-spacing: 1px;
         font-size: 12px;
         line-height: 14px;
+
+        @media screen and (max-width: 236px) {
+            font-size: 10px;
+        }
     }
 
     &__link {
         color: white;
         margin-right: 10px;
+
+        @media screen and (max-width: 236px) {
+            margin-right: 6px;
+        }
     }
     &__link:last-child {
         margin-right: 20px;
@@ -121,6 +131,11 @@
             color: rgba(179, 179, 186, 1);
             font-size: 14px;
         }
+
+        @media screen and (max-width: 285px) {
+            color: rgba(179, 179, 186, 1);
+            font-size: 10px;
+        }
     }
     &__telephone::before {
         content: "";
@@ -154,6 +169,7 @@
     }
 
     &__nav {
+        position: relative;
         font-family: var(--medium), serif;
         font-size: 18px;
         line-height: 21px;
@@ -161,6 +177,10 @@
         @media screen and (max-width: 642px) {
             display: flex;
             justify-content: space-between;
+        }
+        @media screen and (max-width: 375px) {
+            font-size: 16px;
+            line-height: 19px;
         }
     }
 }
@@ -175,7 +195,8 @@
 
     &__bar {
         display: none;
-        width: 15%;
+        // width: 15%;
+        
         @media screen and (max-width: 642px) {
             display: block;
             width: 64px;
@@ -189,7 +210,7 @@
     &__box {
         position: absolute;
         top: 0;
-        left: 0;
+        left: 100%;
         width: 1px;
         height: 1px;
         overflow: hidden;

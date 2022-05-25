@@ -3,12 +3,20 @@
     justify-content: flex-end;
     flex-wrap: wrap;
     @media screen and (max-width: 642px) {
+        position: absolute;
+        top: 55%;
+        left: 48%;
         display: none;
+       
      }
 
     &__list-item {
         display: inline-block;
         margin-right: 12px;
+        @media screen and (max-width: 642px){
+            display: block;
+        }
+
     }
 
     &__list-item:last-child {

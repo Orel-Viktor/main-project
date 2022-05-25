@@ -1,6 +1,6 @@
 .hero {
     background: linear-gradient(20deg, #323264 14.33%, #323264 51.39%, #7a425e 87.53%);
-    padding: 180px 0 20px 0;
+    padding: 160px 0 20px 0;
 
     &__inner {
         margin: 0 auto;
@@ -10,17 +10,16 @@
 
         background: url(../../images/hero/hero-staple.png) no-repeat;
 
-        @media screen and (max-width: 375px){
-            background:none;
+        @media screen and (max-width: 375px) {
+            background: none;
+            min-height: 437px;
         }
-
-        
     }
 
     &__inner-p {
         position: relative;
+        padding-top: 180px;
 
-        padding: 180px 0 0 0;
         max-width: inherit;
         min-height: inherit;
         width: 100%;
@@ -30,11 +29,17 @@
         background-size: 100% 200px, auto;
 
         @media screen and (max-width: 375px) {
+            padding-top: 80px;
+
             background: linear-gradient(180deg, rgba(50, 50, 100, 0) 16.67%, #323264 100%) bottom right no-repeat,
-             url(../../images/hero/hero-p.svg) 33% 64% no-repeat;
-            background-size: 100% 200px, 437px;
-           
-           
+                url(../../images/hero/hero-p.svg) 36% 63% no-repeat;
+            background-size: 100% 200px, 395px;
+        }
+
+        @media screen and (max-width: 272px) {
+            background: linear-gradient(180deg, rgba(50, 50, 100, 0) 16.67%, #323264 100%) bottom right no-repeat,
+                url(../../images/hero/hero-p.svg) 33% 44% no-repeat;
+            background-size: 100% 200px, 300px;
         }
     }
 
@@ -48,6 +53,11 @@
         color: white;
         font-size: 38px;
         line-height: 45px;
+
+        @media screen and (max-width: 272px) {
+            font-size: 25px;
+            line-height: 30px;
+        }
     }
 }
 
@@ -60,7 +70,7 @@
     @media screen and (max-width: 375px) {
         bottom: 13%;
     }
-        
+
     &__img {
         width: 42px;
         height: 42px;
