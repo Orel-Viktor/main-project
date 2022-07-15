@@ -1,7 +1,7 @@
 import '/styles/main.scss'
 
 $(document).ready(function () {
-    $('.team').slick({
+    $('.team__sliders').slick({
         arrows: false,
         dots: true
     })
