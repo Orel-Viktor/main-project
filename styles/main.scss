@@ -9,6 +9,7 @@
 @import "components/team.scss";
 @import "components/cases.scss";
 @import "components/partners.scss";
+@import "components/news.scss";
 
 *,
 *::before,
@@ -144,4 +145,7 @@ li {
 //////////// MODIFICATORS
 .mgb20 {
     margin-bottom: 20px;
+}
+.mgb40 {
+    margin-bottom: 40px;
 }
