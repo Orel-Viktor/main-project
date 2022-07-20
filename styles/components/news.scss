@@ -87,7 +87,13 @@
         min-height: 50px;
 
     }
-
+    &__button:hover{
+        background: rgb(35, 119, 179);
+        transition:0.3s;
+     }
+     &__button:active{
+        background: rgb(5, 54, 88);
+     }
 }
  .blur__block{
     position: absolute;
