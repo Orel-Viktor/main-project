@@ -32,8 +32,19 @@
             display: none;
         }
     }
+    .slick-slide &__photo-small{
+        display: none;
+        position: absolute;
+        left: 20px;
+        bottom: 20px;
+        object-fit: contain;
+        @media screen and (max-width: 835px) {
+            display: block;
+        }
+    }
 
     &__decsriptions {
+        position: relative;
         word-break: break-word;
         display: flex;
         flex-direction: column;
@@ -45,8 +56,8 @@
 
         padding: 40px 10px 10px 10px;
 
-        @media screen and (max-width: 642px) {
-            padding: 10px;
+        @media screen and (max-width: 835px) {
+            padding:20px
         }
     }
 
@@ -55,6 +66,10 @@
         font-size: 18px;
         line-height: 21px;
         color: rgba(179, 179, 186, 1);
+        @media screen and (max-width: 835px) {
+            padding: 0 0 0 80px;
+        }
+        
     }
 
     &__position {
@@ -62,6 +77,9 @@
         font-size: 16px;
         line-height: 22px;
         color: rgba(179, 179, 186, 1);
+         @media screen and (max-width: 835px) {
+            padding: 0 0 0 80px;
+        }
     }
 
   
